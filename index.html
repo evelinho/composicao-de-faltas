@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./storage/css/styles.css">
+    <link rel="stylesheet" href="./storage/css/index.css">
+    <link rel="icon" href="./storage/img/logo.ico">
+    <title>BlueWaves Stream</title>
+</head>
+<body>
+    <header class="w-100 d-flex align-items-center justify-between p-fixed top-0">
+        <a href="#" class="logo d-flex align-items-center btn-opacity scale-down gap-16">
+            <img src="./storage/img/logo.ico">
+            <p class="fs-forza white fs-21">BlueWaves Stream</p>
+        </a>
+        <nav class="d-flex align-items-center gap-16">
+            <a href="#" class="btn btn-outline-white fs-montserrat">Login</a>
+            <a href="#" class="btn btn-blue fs-montserrat">Assine já</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="d-flex align-items-center p-relative">
+            <div class="w-100 d-flex align-items-center justify-center">
+                <div class="text-container w-50">
+                    <h1 class="fs-forza white fs-64 text-center" data-aos="fade-down" data-aos-duration="1000">O seu cinema de onde voce estiver</h1>
+                    <p class="fs-montserrat white fs-32 text-center" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="1000">Filmes, Séries, Animes, Doramas e muito mais!</p>
+                    <div class="d-flex align-items-center justify-between gap-16">
+                        <div class="m-0 d-flex align-items-center justify-center" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2000">
+                            <a href="#" class="btn btn-blue-animated fs-montserrat text-center flex-grow-1">ASSINE JÁ O BLUEWAVES STREAM + PLUS</a>
+                        </div>
+                        <div class="m-0 d-flex align-items-center justify-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2000">
+                            <a href="#" class="btn btn-white fs-montserrat text-center flex-grow-1" >Assinar somente o Bluewaves Stream</a>
+                        </div>
+                    </div>
+                    <p class="fs-montserrat white fs-16 text-center" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="3000">Planos á partir de R$27,90 / Mês</p>
+                </div>
+            </div>
+            <div class="btn-slider d-flex align-items-center p-absolute right-0 bottom-0">
+                <button id="btn-slide-1" class="btn active"></button>
+                <button id="btn-slide-2" class="btn"></button>
+                <button id="btn-slide-3" class="btn"></button>
+            </div>
+            <div id="detail" class="w-100 p-absolute bottom-0">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 600 127" style="enable-background:new 0 0 600 127;" xml:space="preserve"><style type="text/css">.st0{fill:url(#mrsmiley);}</style><linearGradient id="mrsmiley" gradientUnits="userSpaceOnUse" x1="300" y1="898.2045" x2="300" y2="1019.582" gradientTransform="matrix(1 0 0 -1 0 1000)"><stop offset="0" style="stop-color:#002BE7"/><stop offset="0.8354" style="stop-color:#0A0D8F"/></linearGradient><path class="st0" d="M600,0c0,0-90,33-300,33S0,0,0,0v127h600V0L600,0z"/></svg>
+            </div>
+        </section>
+        <section id="catalogo" class="d-flex flex-column p-relative m-auto">
+            <h2 class="fs-montserrat white fs-32 text-center pd-p" data-aos="fade-down" data-aos-duration="1000">Nossos mais assistidos!</h2>
+            <div class="movies-slider d-flex align-items-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
+                <button id="prev-slide" class="btn btn-opacity btn-rotate-down">
+                    <svg style="transform: rotate(180deg);" width="14" height="26" viewBox="0 0 14 26" fill="none"><path d="M1.5 24.5L12.5 13L1.5 1.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                </button>
+                <div id="slider-container">
+                    <ul class="list-slide-movies d-flex align-items-center gap-64 m-auto">
+                        <li class="slider">
+                            <a href="#" class="d-flex p-relative scale-up"><img src="./storage/img/movies/1.webp"></a>
+                        </li>
+                        <li class="slider">
+                            <a href="#" class="d-flex p-relative scale-up"><img src="./storage/img/movies/2.webp"></a>
+                        </li>
+                        <li class="slider">
+                            <a href="#" class="d-flex p-relative scale-up"><img src="./storage/img/movies/3.webp"></a>
+                        </li>
+                        <li class="slider">
+                            <a href="#" class="d-flex p-relative scale-up"><img src="./storage/img/movies/4.webp"></a>
+                        </li>
+                        <li class="slider">
+                            <a href="#" class="d-flex p-relative scale-up"><img src="./storage/img/movies/5.webp"></a>
+                        </li>
+                        <li class="slider">
+                            <a href="#" class="d-flex p-relative scale-up"><img src="./storage/img/movies/6.webp"></a>
+                        </li>
+                        <li class="slider">
+                            <a href="#" class="d-flex p-relative scale-up"><img src="./storage/img/movies/7.webp"></a>
+                        </li>
+                        <li class="slider">
+                            <a href="#" class="d-flex p-relative scale-up"><img src="./storage/img/movies/8.webp"></a>
+                        </li>
+                        <li class="slider">
+                            <a href="#" class="d-flex p-relative scale-up"><img src="./storage/img/movies/9.webp"></a>
+                        </li>
+                        <li class="slider">
+                            <a href="#" class="d-flex p-relative scale-up"><img src="./storage/img/movies/10.webp"></a>
+                        </li>
+                    </ul>
+                </div>
+                <button id="next-slide" class="btn btn-opacity btn-rotate-down">
+                    <svg width="14" height="26" viewBox="0 0 14 26" fill="none"><path d="M1.5 24.5L12.5 13L1.5 1.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                </button>
+            </div>
+        </section>
+        <section id="notebook-1" class="w-100 pd-section m-auto d-flex align-items-center justify-center gap-64">
+            <div class="text-group text-right" data-aos="fade-right" data-aos-duration="1000">
+                <h2 class="fs-montserrat blue fs-32 pd-p">Filmes e séries de qualidade!</h2>
+                <p class="fs-montserrat white fs-21 pd-p">Os melhores conteúdos de qualidade estão aqui! Diariamente atualizamos nosso catálogo para que você tenha todod dia opções novas de entreterimento de qualidade!</p>
+                <a href="#" class="btn btn-blue-animated fs-montserrat d-flex m-auto justify-center">Assine agora mesmo o BlueWaves Plus+</a>
+            </div>
+            <div class="img-group" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
+                <img src="./storage/img/computador-1.png">
+            </div>
+        </section>
+        <section id="motivos-assinatura" class="pd-section">
+            <h2 class="fs-montserrat blue fs-32 text-center pd-p" data-aos="fade-down" data-aos-duration="1000">Motivos para assinar!</h2>
+            <ul class="devices-list d-flex align-items-center justify-center gap-64">
+                <li class="d-flex flex-column align-items-center text-center" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="600">
+                    <img src="./storage/img/arrow-download.png">
+                    <p class="white fs-forza fs-32">Baixe seus filmes!</p>
+                    <p class="white fs-montserrat fs-21">Assista séries Offline sem internet</p>
+                </li>
+                <li class="d-flex flex-column align-items-center text-center" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1200">
+                    <img src="./storage/img/lancamento.png">
+                    <p class="white fs-forza fs-32">Novos lancamentos diariamente</p>
+                    <p class="white fs-montserrat fs-21">Receber filmes, séries e desenhos diferentes todo dia? É só na BlueWave!</p>
+                </li>
+                <li class="d-flex flex-column align-items-center text-center" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1800">
+                    <img src="./storage/img/icon-protecao.png">
+                    <p class="white fs-forza fs-32">Conta segura para criancas</p>
+                    <p class="white fs-montserrat fs-21">Manteha seus filhos protegidos sob sua vigilância, escolha o que ele pode e não pode assistir pela sua conta</p>
+                </li>
+            </ul>
+        </section>
+        <section id="offline-viewing" class="w-100 pd-section m-auto d-flex align-items-center justify-center gap-64">
+            <div class="img-group" data-aos="fade-right" data-aos-duration="1000">
+                <img src="./storage/img/arrow-download.png">
+            </div>
+            <div class="text-group text-left" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
+                <h2 class="fs-montserrat blue fs-32 pd-p">Baixe suas séries e filmes favoritos!</h2>
+                <p class="fs-montserrat white fs-21 pd-p">Não se preocupe mais com horas, lugar ou conexão! Aqui você não depende de internet, não limite sua esperiência com outros serviços de streaming e assine BlueWaves agora mesmo!</p>
+                <a href="#" class="btn btn-blue-animated fs-montserrat d-flex m-auto justify-center">Não vou perder essa oportunidade</a>
+            </div>
+        </section>
+        <section id="devices" class="pd-section">
+            <h2 class="fs-montserrat blue fs-32 text-center pd-p" data-aos="fade-down" data-aos-duration="1000">Assista BlueWaves em qualquer lugar!</h2>
+            <ul class="devices-list d-flex align-items-center justify-center gap-64">
+                <li class="d-flex flex-column align-items-center" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="600">
+                    <img src="./storage/img/tv.png">
+                    <p class="white fs-forza fs-32">TV</p>
+                </li>
+                <li class="d-flex flex-column align-items-center" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1200">
+                    <img src="./storage/img/computador.png">
+                    <p class="white fs-forza fs-32">Computador</p>
+                </li>
+                <li class="d-flex flex-column align-items-center" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1800">
+                    <img src="./storage/img/celular.png">
+                    <p class="white fs-forza fs-32">Celular</p>
+                </li>
+            </ul>
+        </section>
+        <section id="estreias" class="pd-section">
+            <h2 class="fs-montserrat blue fs-32 text-center pd-p" data-aos="fade-down" data-aos-duration="1000">Estreias que vão dar no que falar!</h2>
+            <ul class="series-list" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="600">
+                <li>
+                    <a href="#" class="btn-opacity scale-up">
+                        <img src="./storage/img/estreias/1.avif">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="btn-opacity scale-up">
+                        <img src="./storage/img/estreias/2.avif">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="btn-opacity scale-up">
+                        <img src="./storage/img/estreias/3.avif">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="btn-opacity scale-up">
+                        <img src="./storage/img/estreias/4.avif">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="btn-opacity scale-up">
+                        <img src="./storage/img/estreias/5.avif">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="btn-opacity scale-up">
+                        <img src="./storage/img/estreias/6.avif">
+                    </a>
+                </li>
+            </ul>
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+                <a href="#" class="btn btn-blue-animated fs-montserrat d-flex m-auto justify-center">Assine agora!</a>
+            </div>
+        </section>
+        <section id="faq" class="w-100 pd-section d-flex flex-column align-items-center justify-center">
+            <h2 class="fs-montserrat blue fs-32 text-center pd-p" data-aos="fade-down" data-aos-duration="1000">Perguntas frequentes</h2>
+            <div class="faq-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                <div class="faq-item">
+                    <div class="faq-question d-flex align-items-center justify-between">
+                        <span class="white fs-montserrat fs-21">O que é o BlueWaves Stream?</span>
+                        <svg class="sc-bYMpWt jRCA-DL expanded" width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 24.5L12.5 13L1.5 1.5" stroke="rgba(255, 255, 255, 0.7)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    </div>
+                    <div class="faq-answer white fs-montserrat fs-16">
+                        O BlueWaves Stream é um serviço de streaming que oferece uma ampla variedade de filmes, séries, documentários e animações. Nossa plataforma foi criada para proporcionar uma experiência de entretenimento de alta qualidade e acessível em qualquer dispositivo.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question d-flex align-items-center justify-between">
+                        <span class="white fs-montserrat fs-21">Em quais dispositivos posso assistir ao BlueWaves Stream?</span>
+                        <svg class="sc-bYMpWt jRCA-DL expanded" width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 24.5L12.5 13L1.5 1.5" stroke="rgba(255, 255, 255, 0.7)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    </div>
+                    <div class="faq-answer white fs-montserrat fs-16">
+                        Você pode acessar o BlueWaves Stream em diversos dispositivos, como smartphones, tablets, computadores, smart TVs e consoles de videogame. Basta ter uma conexão com a internet e um dispositivo compatível.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question d-flex align-items-center justify-between">
+                        <span class="white fs-montserrat fs-21">Posso assistir ao conteúdo offline?</span>
+                        <svg class="sc-bYMpWt jRCA-DL expanded" width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 24.5L12.5 13L1.5 1.5" stroke="rgba(255, 255, 255, 0.7)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    </div>
+                    <div class="faq-answer white fs-montserrat fs-16">
+                        Sim! No BlueWaves Stream, você pode baixar seus filmes e séries favoritos para assisti-los offline. Essa opção está disponível em dispositivos móveis para que você aproveite seu conteúdo mesmo sem conexão com a internet.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question d-flex align-items-center justify-between">
+                        <span class="white fs-montserrat fs-21">Há um período de teste gratuito?</span>
+                        <svg class="sc-bYMpWt jRCA-DL expanded" width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 24.5L12.5 13L1.5 1.5" stroke="rgba(255, 255, 255, 0.7)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    </div>
+                    <div class="faq-answer white fs-montserrat fs-16">
+                        Sim, oferecemos um período de teste gratuito de 7 dias para novos usuários. Durante esse período, você poderá explorar todo o catálogo do BlueWaves Stream sem qualquer cobrança. Após o período de teste, você pode optar por um dos nossos planos de assinatura.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question d-flex align-items-center justify-between">
+                        <span class="white fs-montserrat fs-21">Quais são os planos de assinatura disponíveis?</span>
+                        <svg class="sc-bYMpWt jRCA-DL expanded" width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 24.5L12.5 13L1.5 1.5" stroke="rgba(255, 255, 255, 0.7)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    </div>
+                    <div class="faq-answer white fs-montserrat fs-16">
+                        O BlueWaves Stream oferece diferentes planos de assinatura, incluindo opções mensais e anuais. Temos planos individuais e familiares, todos com acesso completo ao catálogo, sem anúncios e com a possibilidade de criar perfis personalizados.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question d-flex align-items-center justify-between">
+                        <span class="white fs-montserrat fs-21">Como posso cancelar minha assinatura?</span>
+                        <svg class="sc-bYMpWt jRCA-DL expanded" width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 24.5L12.5 13L1.5 1.5" stroke="rgba(255, 255, 255, 0.7)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    </div>
+                    <div class="faq-answer white fs-montserrat fs-16">
+                        Você pode cancelar sua assinatura a qualquer momento diretamente pela área de "Configurações" no site ou aplicativo do BlueWaves Stream. O cancelamento entra em vigor no final do ciclo de cobrança atual.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question d-flex align-items-center justify-between">
+                        <span class="white fs-montserrat fs-21">Posso compartilhar minha conta com outras pessoas?</span>
+                        <svg class="sc-bYMpWt jRCA-DL expanded" width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 24.5L12.5 13L1.5 1.5" stroke="rgba(255, 255, 255, 0.7)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                    </div>
+                    <div class="faq-answer white fs-montserrat fs-16">
+                        Sim! Dependendo do plano que você escolher, o BlueWaves Stream permite criar múltiplos perfis, para que você possa compartilhar sua conta com familiares ou amigos, mantendo recomendações e histórico de visualizações separados.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="footer" class="w-100 pd-section d-flex align-items-center justify-center flex-column gap-64">
+            <div data-aos="fade-down" data-aos-duration="1000">
+                <a href="/index.html" class="d-flex flex-column align-items-center justify-center gap-16 scale-down btn-opacity">
+                    <img src="./storage/img/logo.ico">
+                    <p class="fs-forza white fs-21">BlueWaves Stream</p>
+                </a>
+            </div>
+            <ul class="d-flex align-items-center justify-center text-center gap-64">
+                <li data-aos="fade-down" data-aos-duration="1000" data-aos-delay="600">
+                    <a href="#" class="white fs-16 fs-montserrat text-center scale-down btn-opacity">Idioma</a>
+                </li>
+                <li data-aos="fade-down" data-aos-duration="1000" data-aos-delay="800">
+                    <a href="#" class="white fs-16 fs-montserrat text-center scale-down btn-opacity">Dispositivos compatíveis</a>
+                </li>
+                <li data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1000">
+                    <a href="#" class="white fs-16 fs-montserrat text-center scale-down btn-opacity">Contrato de assinatura</a>
+                </li>
+                <li data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1200">
+                    <a href="#" class="white fs-16 fs-montserrat text-center scale-down btn-opacity">Politica de privacidade</a>
+                </li>
+                <li data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1400">
+                    <a href="#" class="white fs-16 fs-montserrat text-center scale-down btn-opacity">Proteção de dados no Brasil</a>
+                </li>
+                <li data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1600">
+                    <a href="#" class="white fs-16 fs-montserrat text-center scale-down btn-opacity">Anuncios personalizados</a>
+                </li>
+                <li data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1800">
+                    <a href="#" class="white fs-16 fs-montserrat text-center scale-down btn-opacity">Ajuda</a>
+                </li>
+            </ul>
+            <div class="copyright d-flex align-items-center justify-center flex-column gap-16">
+                <p class="white fs-14 fs-montserrat text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2000">® 2024 BlueWaves Stream. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito à disponibilidade.</p>
+                <p class="white fs-14 fs-montserrat text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2200">BlueWaves Stream é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço BlueWaves Stream é comercializado por BWS Entertainment Ltda., Rua Oceano Azul, 987 - Copacabana, Rio de Janeiro - RJ, 12345-678, Brasil e CNPJ 12.345.678/0001-90.</p>
+            </div>
+        </footer>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true
+        })
+      </script>
+    <script src="./storage/js/index.js"></script>
+</body>
+</html>
