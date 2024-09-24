@@ -1,9 +1,9 @@
 /*FORMATAÇÃO INICIAL*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Spicy+Rice&display=swap');
 
 @font-face {
-    src: url('../font/Froza.ttf') format(opentype);
-    font-family: 'Forza';
+    src: url('../font/SpicyRice-Regular.ttf') format(truetype);
+    font-family: 'SpicyRice';
 }
 
 * {
@@ -17,8 +17,8 @@
 :root {
     --branco-principal: #FFFFFF;
     --cinza-secundario: #C0C0C0;
-    --azul: #038eff;
-    --segundo-azul: #0f49ad;
+    --roxo: #9d00ff;
+    --segundo-roxo: #5c0a8f;
     --preto: #00030C;
     --segundo-preto: #07000c;
     --preto-opaco: #3535359c;
@@ -51,19 +51,19 @@ body {
 .btn {
     border: 1px solid transparent;
     outline: none;
-    padding: 16px 32px;
-    border-radius: 25px;
+    padding: 14px 40px;
+    border-radius: 5px;
     cursor: pointer;
     transition: var(--transition-time);
 }
 .btn-blue, .btn-blue-animated {
-    background-color: var(--azul);
-    border-color: var(--azul);
+    background-color: var(--roxo);
+    border-color: var(--roxo);
     color: var(--branco-principal);
 }
 .btn-blue:hover, .btn-blue-animated:hover {
     background-color: var(--transparent);
-    color: var(--azul);
+    color: var(--roxo);
 }
 .btn-white {
     background-color: var(--branco-principal);
@@ -85,13 +85,17 @@ body {
     color: var(--preto);
 }
 .btn-blue-animated {
-    background-image: linear-gradient(90deg, var(--azul), var(--segundo-azul), var(--azul));
+    background-image: linear-gradient(90deg, var(--roxo), var(--segundo-roxo), var(--roxo));
     box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
     background-size: 300% 100%;
     animation: animBtn 4s 1s infinite;
 }
 .btn-blue-animated:hover {
     background-image: none;
+}
+
+.roxo {
+    color: var(--roxo)
 }
 
 /*EFEITOS HOVER*/
@@ -121,10 +125,10 @@ body {
 
 /*CONFIGURAÇÃO DAS FONTES*/
 .fs-montserrat {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lora', sans-serif;
 }
 .fs-forza {
-    font-family: 'Forza', sans-serif;
+    font-family: 'SpicyRice', sans-serif;
 }
 .fs-64 {
     font-size: 3.33vw;
@@ -153,7 +157,7 @@ body {
     color: var(--branco-principal);
 }
 .blue {
-    color: var(--azul);
+    color: var(--branco-principal);
 }
 .black {
     color: var(--segundo-preto);

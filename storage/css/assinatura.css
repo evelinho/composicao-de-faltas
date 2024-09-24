@@ -1,0 +1,38 @@
+#planos {
+    padding: 6.66vw 3.33vw;
+    padding-top: 8vw;
+}
+#planos .plans-list {
+    width: 80%;
+    align-items: stretch;
+}
+#planos .plans-list .plan-item {
+    flex-grow: 1;
+    display: flex;
+}
+#planos .plans-list a {
+    border-radius: 25px;
+    border: 1px solid var(--roxo);
+    aspect-ratio: 1/1.2;
+    padding: 3.33vw;
+    transform: scale(.9);
+}
+#planos .plan-item.main a {
+    background-color: var(--roxo);
+    color: var(--branco-principal);
+}
+#planos .plan-item.main .btn-outline-white:hover {
+    color: var(--roxo);
+}
+#planos .plan-item.main a .blue {
+    color: var(--branco-principal);
+}
+#planos h2.blue {
+    color: var(--segundo-roxo);
+}
+#planos .plan-item a svg {
+    fill: var(--segundo-roxo);
+}
+#planos .plan-item.main a svg {
+    fill: var(--branco-principal);
+}
